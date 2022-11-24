@@ -1,8 +1,5 @@
-@use 'colors' as colors;
-@use 'animations' as animations;
-@use 'small' as small;
-@use 'medium' as medium;
-@use 'large' as large;
+@import './colors';
+@import './animations';
 
 *,
 *::before,
@@ -21,15 +18,15 @@ body {
 	font-family: 'Cinzel', serif;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.6rem;
-	color: colors.$white;
-	background-color: colors.$dark;
+	color: $white;
+	background-color: $dark;
 }
 
 h1.company-name {
 	margin-bottom: 0.5em;
 	font-size: 3rem;
 	font-family: 'Cinzel', sans-serif;
-	color: colors.$gold;
+	color: $gold;
 }
 
 .wrapper {
@@ -113,7 +110,7 @@ h1.company-name {
 	&-inner,
 	&-inner::before,
 	&-inner::after {
-		background-color: colors.$white;
+		background-color: $white;
 		z-index: 500;
 	}
 }
@@ -129,7 +126,7 @@ h1.company-name {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		background-color: colors.$white;
+		background-color: $white;
 		transform: translateX(-102%);
 		transition: transform 0.3s;
 		z-index: 10;
@@ -149,13 +146,13 @@ h1.company-name {
 		margin: 0.5em;
 		padding: 0.5em;
 		font-size: 2.3rem;
-		color: colors.$darker;
+		color: $darker;
 		text-transform: uppercase;
 		text-decoration: none;
 		transition: color 0.3s;
 
 		&:hover {
-			color: colors.$gold;
+			color: $gold;
 		}
 
 		&::before {
@@ -165,7 +162,7 @@ h1.company-name {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			border: 1px solid colors.$gold;
+			border: 1px solid $gold;
 			opacity: 0;
 
 			&:hover::before {
@@ -174,3 +171,7 @@ h1.company-name {
 		}
 	}
 }
+
+@import './small';
+@import './medium';
+@import './large';
