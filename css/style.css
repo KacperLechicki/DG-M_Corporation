@@ -69,6 +69,7 @@ body {
   font-size: 1.6rem;
   color: #fff;
   background-color: #232323;
+  overflow: hidden;
 }
 
 h1.company-name {
@@ -177,7 +178,7 @@ h1.company-name {
   display: inline-block;
   margin: 0.5em;
   padding: 0.5em;
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   color: #191919;
   text-transform: uppercase;
   text-decoration: none;
@@ -196,12 +197,15 @@ h1.company-name {
   border: 1px solid #d6c78e;
   opacity: 0;
 }
-.nav__link::before:hover::before {
-  -webkit-animation: pulse 1s;
-          animation: pulse 1s;
+.nav__link:hover::before {
+  -webkit-animation: pulse 1.5s;
+          animation: pulse 1.5s;
 }
 
 @media (min-width: 992px) {
+  h1.company-name {
+    font-size: 6rem;
+  }
   .header {
     grid-template-rows: auto repeat(2, 1fr);
   }

@@ -20,6 +20,7 @@ body {
 	font-size: 1.6rem;
 	color: $white;
 	background-color: $dark;
+	overflow: hidden;
 }
 
 h1.company-name {
@@ -145,7 +146,7 @@ h1.company-name {
 		display: inline-block;
 		margin: 0.5em;
 		padding: 0.5em;
-		font-size: 2.3rem;
+		font-size: 2.8rem;
 		color: $darker;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -164,10 +165,10 @@ h1.company-name {
 			height: 100%;
 			border: 1px solid $gold;
 			opacity: 0;
+		}
 
-			&:hover::before {
-				animation: pulse 1s;
-			}
+		&:hover::before {
+			animation: pulse 1.5s;
 		}
 	}
 }
