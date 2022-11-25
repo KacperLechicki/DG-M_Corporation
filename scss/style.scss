@@ -407,8 +407,9 @@ h1.company-name {
 			background: none;
 			color: $gold;
 			font-weight: bold;
-			cursor: pointer;
 			transition: background-color 0.3s, color 0.3s;
+			animation: pulse2 1s infinite linear;
+			cursor: pointer;
 
 			&:hover {
 				color: $green;

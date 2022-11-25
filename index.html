@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@200;400;900&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./img/icons/coin-us-dollar-icon.png">
     <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -31,14 +32,14 @@
             <a class="nav__link mobile-link" href="#plan">plans</a>
             <a class="nav__link mobile-link" href="#contact">contact</a>
         </nav>
-        <nav class="nav nav-desktop">
+        <nav class="nav nav-desktop" data-aos="fade-down" data-aos-once="true" data-aos-duration="800">
             <a class="nav__link" href="#">home</a>
             <a class="nav__link" href="#invest">invest</a>
             <a class="nav__link" href="#plan">plans</a>
             <a class="nav__link" href="#contact">contact</a>
         </nav>
 
-        <div class="header__text">
+        <div class="header__text" data-aos="flip-up" data-aos-once="true" data-aos-duration="800">
             <h1 class="company-name">Diamonds, Gold & Money</h1>
         </div>
 
@@ -61,15 +62,18 @@
         <section class="cards" id="cards">
             <div class="wrapper">
                 <div class="cards__box">
-                    <div class="cards__card cards__card--one">
+                    <div class="cards__card cards__card--one" data-aos="flip-left" data-aos-once="true"
+                        data-aos-duration="800">
                         <img src="./img/icons/trending-up.svg" alt="">
                         <h3>profit</h3>
                     </div>
-                    <div class="cards__card cards__card--two">
+                    <div class="cards__card cards__card--two" data-aos="flip-right" data-aos-once="true"
+                        data-aos-duration="800">
                         <img src="./img/icons/award.svg" alt="">
                         <h3>no. 1</h3>
                     </div>
-                    <div class="cards__card cards__card--three">
+                    <div class="cards__card cards__card--three" data-aos="flip-left" data-aos-once="true"
+                        data-aos-duration="800">
                         <img src="./img/icons/globe.svg" alt="">
                         <h3>global</h3>
                     </div>
@@ -80,20 +84,22 @@
         <div class="wrapper">
             <section class="info" id="invest">
                 <div class="info__title">
-                    <h2 class="section-title">invest <span>smart</span></h2>
+                    <h2 class="section-title" data-aos="flip-up" data-aos-once="true" data-aos-duration="800">invest
+                        <span>smart</span>
+                    </h2>
                 </div>
                 <div class="info__boxes">
-                    <div class="info__box">
+                    <div class="info__box" data-aos="fade-left" data-aos-once="true" data-aos-duration="800">
                         <img src="./img/icons/banknotes_640.jpeg" alt="Banknotes" class="info__box-img">
                         <h3 class="info__box-title">money</h3>
                         <a href="" class="info__box-link">read more...</a>
                     </div>
-                    <div class="info__box">
+                    <div class="info__box" data-aos="fade-left" data-aos-once="true" data-aos-duration="800">
                         <img src="./img/icons/diamond_640.jpeg" alt="Diamond" class="info__box-img">
                         <h3 class="info__box-title">diamonds</h3>
                         <a href="" class="info__box-link">read more...</a>
                     </div>
-                    <div class="info__box">
+                    <div class="info__box" data-aos="fade-left" data-aos-once="true" data-aos-duration="800">
                         <img src="./img/icons/gold_640.jpeg" alt="Gold" class="info__box-img">
                         <h3 class="info__box-title">gold</h3>
                         <a href="" class="info__box-link">read more...</a>
@@ -108,8 +114,10 @@
 
         <section class="plans" id="plan">
             <div class="wrapper">
-                <h2 class="section-title">plan your <span>future</span></h2>
-                <div class="plans__box">
+                <h2 class="section-title" data-aos="flip-up" data-aos-once="true" data-aos-duration="800">plan your
+                    <span>future</span>
+                </h2>
+                <div class="plans__box" data-aos="flip-up" data-aos-once="true" data-aos-duration="800">
                     <img src="./img/icons/briefcase.svg" alt="" class="plans__item plans__item-icon">
                     <div class="plans__item plans__item-name">
                         <h3>#easyMoney</h3>
@@ -127,7 +135,7 @@
                         <p>5% - 10%</p>
                     </div>
                 </div>
-                <div class="plans__box">
+                <div class="plans__box" data-aos="flip-up" data-aos-once="true" data-aos-duration="800">
                     <img src="./img/icons/cast.svg" alt="" class="plans__item plans__item-icon">
                     <div class="plans__item plans__item-name">
                         <h3>#reliableStuff </h3>
@@ -145,7 +153,7 @@
                         <p>25% - 35%</p>
                     </div>
                 </div>
-                <div class="plans__box">
+                <div class="plans__box" data-aos="flip-up" data-aos-once="true" data-aos-duration="800">
                     <img src="./img/icons/film.svg" alt="" class="plans__item plans__item-icon">
                     <div class="plans__item plans__item-name">
                         <h3>#allIn</h3>
@@ -191,7 +199,8 @@
 
         <section id="contact" class="contact">
             <div class="wrapper">
-                <h2 class="section-title">contact <span>us</span></h2>
+                <h2 class="section-title" data-aos="flip-up" data-aos-once="true" data-aos-duration="800">contact
+                    <span>us</span></h2>
                 <form class="contact__form">
                     <div class="contact__form-box">
                         <label for="name">Your name:</label>
@@ -218,6 +227,11 @@
             DinosoftLabs -
             Flaticon</a>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/script.js"></script>
 </body>
 

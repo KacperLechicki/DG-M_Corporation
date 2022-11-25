@@ -18,6 +18,28 @@
     opacity: 0;
   }
 }
+@-webkit-keyframes pulse2 {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes pulse2 {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 @-webkit-keyframes rotate-right {
   from {
     transform: rotate(0);
@@ -403,8 +425,10 @@ h1.company-name {
   background: none;
   color: #d6c78e;
   font-weight: bold;
-  cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  -webkit-animation: pulse2 1s infinite linear;
+          animation: pulse2 1s infinite linear;
+  cursor: pointer;
 }
 .newsletter__form-button:hover {
   color: #5a6b34;
