@@ -488,6 +488,26 @@ h1.company-name {
   .plans__item-icon {
     margin-left: 5em;
   }
+  .newsletter__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .newsletter__text {
+    margin-bottom: 0;
+  }
+  .newsletter__form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+  }
+  .newsletter__form-input {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+  .newsletter__form-button {
+    font-size: 1.6rem;
+  }
 }
 @media (min-width: 992px) {
   .section-title {
