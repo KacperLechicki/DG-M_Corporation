@@ -139,7 +139,7 @@ h1.company-name {
   background-image: url("../img/bitcoin_640.jpeg");
   background-size: cover;
   background-position: center;
-  filter: sepia();
+  filter: sepia(1);
 }
 .header__shadow {
   position: absolute;
@@ -309,7 +309,7 @@ h1.company-name {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
-  filter: sepia();
+  filter: sepia(1);
 }
 .info__box-title {
   margin: 0.4em 0;

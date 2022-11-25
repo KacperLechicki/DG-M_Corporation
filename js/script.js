@@ -1,7 +1,7 @@
 const navMobile = document.querySelector('.nav-mobile');
 const navBtn = document.querySelector('.hamburger');
 const body = document.querySelector('body');
-const allNavItems = document.querySelectorAll('#mobile-link');
+const allNavItems = document.querySelectorAll('.mobile-link');
 
 const handleNav = () => {
 	navBtn.classList.toggle('is-active');
