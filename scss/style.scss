@@ -374,8 +374,8 @@ h1.company-name {
 	text-align: center;
 
 	&__text {
-		padding: 1em;
-		margin-bottom: 1em;
+		padding: 0.5em;
+		margin-bottom: 0.5em;
 		font-size: 4rem;
 		font-weight: 200;
 	}
@@ -406,6 +406,28 @@ h1.company-name {
 			}
 		}
 	}
+}
+
+//GALLERY
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	img {
+		height: 100%;
+		width: 101%;
+		object-fit: cover;
+
+		&:nth-child(odd) {
+			display: none;
+		}
+	}
+}
+
+.footer {
+	padding: 3em 1em;
+	border-top: 1px solid $darker;
+	text-align: center;
 }
 
 @import './small';

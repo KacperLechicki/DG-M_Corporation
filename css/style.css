@@ -374,8 +374,8 @@ h1.company-name {
   text-align: center;
 }
 .newsletter__text {
-  padding: 1em;
-  margin-bottom: 1em;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
   font-size: 4rem;
   font-weight: 200;
 }
@@ -400,6 +400,26 @@ h1.company-name {
 .newsletter__form-button:hover {
   color: #5a6b34;
   background-color: #d6c78e;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.gallery img {
+  height: 100%;
+  width: 101%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery img:nth-child(odd) {
+  display: none;
+}
+
+.footer {
+  padding: 3em 1em;
+  border-top: 1px solid #191919;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
@@ -508,6 +528,12 @@ h1.company-name {
   .newsletter__form-button {
     font-size: 1.6rem;
   }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .gallery img:nth-child(odd) {
+    display: block;
+  }
 }
 @media (min-width: 992px) {
   .section-title {
@@ -586,5 +612,10 @@ h1.company-name {
   }
   .hamburger {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(8, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
