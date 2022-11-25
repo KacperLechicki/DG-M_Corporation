@@ -199,6 +199,10 @@ h1.company-name {
 }
 .nav-desktop {
   display: none;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
 .nav__link {
   position: relative;
@@ -446,7 +450,7 @@ h1.company-name {
   width: 100%;
   color: rgb(224, 224, 224);
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 8px;
 }
 .contact__form-box input:focus,
