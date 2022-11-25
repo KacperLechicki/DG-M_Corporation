@@ -14,6 +14,7 @@ allNavItems.forEach((item) => {
 	item.addEventListener('click', () => {
 		navMobile.classList.remove('nav-mobile--active');
 		navBtn.classList.toggle('is-active');
+		body.classList.toggle('ohidden');
 	});
 });
 
